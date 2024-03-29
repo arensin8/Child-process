@@ -7,7 +7,7 @@ exec("chmod +x exec.js", (err, stdout, stderr) => {
   console.log("stdout:", stdout);
 
   // execFile("python3", ["./index.py"], (err, stdout, stderr) => {
-  execFile("./exec.js", (err, stdout, stderr) => {
+  execFile("pwd", (err, stdout, stderr) => {
     if (err) console.error("Error executing script:", err);
     if (stderr) console.error("stderr:", stderr);
     console.log("stdout:", stdout);

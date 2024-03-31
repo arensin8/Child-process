@@ -17,3 +17,9 @@ exec("node execFile.js", (err, stdout, stderr) => {
   if (stderr) console.log(stderr);
   console.log("stdout:", stdout);
 });
+
+exec("node fork.js", (err, stdout, stderr) => {
+  if (err) console.log(err.message);
+  if (stderr) console.log(stderr);
+  console.log("stdout:", stdout);
+});
